@@ -1,0 +1,731 @@
+
+<!doctype html>
+<html lang="en" class="h-full">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://wealthy-dates-club.turncage.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine%3Awght%40400&display=swap" rel="preload" as="style">
+<link href="https://fonts.googleapis.com/css2?family=Lora%3Awght%40400%3B600%3B700&family=Nunito%3Awght%40400%3B600%3B700&display=swap" rel="preload" as="style">
+<link href="https://fonts.googleapis.com/css2?family=Tangerine%3Awght%40400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link href="https://fonts.googleapis.com/css2?family=Lora%3Awght%40400%3B600%3B700&family=Nunito%3Awght%40400%3B600%3B700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine%3Awght%40400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora%3Awght%40400%3B600%3B700&family=Nunito%3Awght%40400%3B600%3B700&display=swap" rel="stylesheet">
+  </noscript>
+<link rel="stylesheet" href="style.css">
+<noscript>
+  <style>
+    div[x-anim-fade],
+    h1[x-anim-fade] {
+      visibility: visible;
+    }
+  </style>
+</noscript>
+<style>
+  :root {
+      --menu-height: 5rem;
+   --menu-height: 10rem;
+   --logo-font: "Tangerine";
+      --logo-weight: 400;
+      --logo-size: 54px;
+      --title-font: "Lora";
+      --body-font: "Nunito";
+      --background: #FAFAFA;
+      --button: #00a4b3;
+      --button-text: #FAFAFA;
+      --foreground: #111414;
+      --alt: #D3D4D4;
+      --alt-button: #111414;
+      --alt-button-text: #FAFAFA;
+      --alt-text: #111414;
+      --primary: #00a4b3;
+      --primary-text: #FAFAFA;
+      --secondary: #C5C7C7;
+      --secondary-text: #111414;
+      --tertiary: #7E9395;
+      --tertiary-text: #FAFAFA;
+      --highlight: #606464;
+      --highlight-button: #FAFAFA;
+      --highlight-button-text: #111414;
+      --highlight-text: #FAFAFA;
+      --highlight2: #363B3B;
+      --highlight2-button: #00a4b3;
+      --highlight2-button-text: #FAFAFA;
+      --highlight2-text: #FAFAFA;
+  }
+
+  @media (min-width: 1024px) {
+      :root {
+          --menu-height: 6rem;
+      }
+  }
+
+  .slot-1 {
+      color: #111414;
+  }
+
+  .slot-2 {
+      color: #00a4b3;
+  }
+
+  .slot-3 {
+      color: #7E9395;
+  }
+
+  .text-highlight-text .slot-1 {
+      color: #FAFAFA;
+  }
+
+  .text-highlight-text .slot-2 {
+      color: #D3D4D4;
+  }
+
+  .text-highlight-text .slot-3 {
+      color: #111414;
+  }
+
+  .text-highlight2-text .slot-1 {
+      color: #FAFAFA;
+  }
+
+  .text-highlight2-text .slot-2 {
+      color: #00a4b3;
+  }
+
+  .text-highlight2-text .slot-3 {
+      color: #C5C7C7;
+  }
+
+  .text-alt-text .slot-1 {
+      color: #111414;
+  }
+
+  .text-alt-text .slot-2 {
+      color: #606464;
+  }
+
+  .text-alt-text .slot-3 {
+      color: #7E9395;
+  }
+
+  .text-primary-text .slot-1 {
+      color: #FAFAFA;
+  }
+
+  .text-primary-text .slot-2 {
+      color: #D3D4D4;
+  }
+
+  .text-primary-text .slot-3 {
+      color: #111414;
+  }
+
+  .text-secondary-text .slot-1 {
+      color: #111414;
+  }
+
+  .text-secondary-text .slot-2 {
+      color: #606464;
+  }
+
+  .text-secondary-text .slot-3 {
+      color: #FAFAFA;
+  }
+
+  .text-tertiary-text .slot-1 {
+      color: #FAFAFA;
+  }
+
+  .text-tertiary-text .slot-2 {
+      color: #D3D4D4;
+  }
+
+  .text-tertiary-text .slot-3 {
+      color: #111414;
+  }
+
+  .text-overlay-text .slot-1 {
+      color: #FAFAFA;
+  }
+
+  .text-overlay-text .slot-2 {
+      color: #00a4b3;
+  }
+
+  .text-overlay-text .slot-3 {
+      color: #C5C7C7;
+  }
+</style>
+<meta property="og:title" content="Home">
+</head>
+<body class="flex min-h-full flex-col bg-background text-foreground">
+<nav class="navbar nav-height fixed left-0 top-0 z-30 flex w-full flex-col bg-background px-8 shadow-md lg:flex-row lg:px-4" role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" x-data>
+<ul class="layer-content flex h-20 w-full flex-row items-center lg:h-auto lg:flex-1 lg:gap-6" role="menu">
+<li class="logo mr-auto flex items-center"><a href="/">Wealthy Dates Club</a></li><li class="component self-stretch hidden lg:flex text-lg " role="menuitem" x-data x-on:focusin.window="$refs.panel._x_isShown && !$refs.panel.contains($event.target) && $refs.panel.close()">
+<button type="button" class="flex cursor-pointer items-center gap-1" x-on:click="$refs.panel.toggle">
+<div class="uppercase">Dating Services</div>
+<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" class="h-4 w-4 fill-current transition-transform duration-100">
+<path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+</svg>
+</button>
+<ul class="panel absolute left-0 top-0 z-30 hidden w-max min-w-[10rem] flex-col rounded-sm bg-background text-foreground shadow-md" x-ref="panel" x-float.placement.bottom-start.shift="{shift:{padding: 16}}" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95">
+<li class="border-1 border-t border-neutral-200 capitalize first:border-t-4 first:border-primary  transition-colors hover:bg-primary hover:text-primary-text">
+<a class="block px-3 py-3" role="menuitem" href="/online-friendship">Online Friendship</a>
+</li>
+<li class="border-1 border-t border-neutral-200 capitalize first:border-t-4 first:border-primary  transition-colors hover:bg-primary hover:text-primary-text">
+<a class="block px-3 py-3" role="menuitem" href="/membership-sign-up">Membership sign-up</a>
+</li>
+<li class="border-1 border-t border-neutral-200 capitalize first:border-t-4 first:border-primary  transition-colors hover:bg-primary hover:text-primary-text">
+<a class="block px-3 py-3" role="menuitem" href="/paid-dating">Paid Dating</a>
+</li>
+<li class="border-1 border-t border-neutral-200 capitalize first:border-t-4 first:border-primary  transition-colors hover:bg-primary hover:text-primary-text">
+<a class="block px-3 py-3" role="menuitem" href="/customer-support-team">Customer support team</a>
+</li>
+<li class="border-1 border-t border-neutral-200 capitalize first:border-t-4 first:border-primary  transition-colors hover:bg-primary hover:text-primary-text">
+<a class="block px-3 py-3" role="menuitem" href="/profile-creation">Profile creation</a>
+</li>
+</ul>
+</li><li class="hidden lg:block text-lg " role="menuitem">
+<a class="uppercase" itemprop="url" href="/about">About</a>
+</li><li class="hidden lg:block text-lg " role="menuitem">
+<a class="uppercase" itemprop="url" href="/contact">Contact</a>
+</li>
+<li class="hidden lg:block" role="menuitem">
+<a class="nav-button flex items-center justify-center whitespace-nowrap rounded-md bg-button text-center text-button-text" itemprop="url" href="/contact">Message Us</a>
+</li>
+<li class="lg:hidden" role="menuitem">
+<button x-on:click="$store.menu.isOpen = !$store.menu.isOpen" type="button" class="block px-2 transition duration-100" :class="{ 'rotate-90': $store.menu.isOpen }" aria-label="toggle-menu">
+<svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path class="hidden" :class="{ 'block': $store.menu.isOpen, 'hidden': !$store.menu.isOpen }" fill-rule="evenodd" clip-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
+<path :class="{ 'hidden': $store.menu.isOpen, 'block': !$store.menu.isOpen }" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+</svg>
+</button>
+</li>
+</ul>
+<a class="nav-button flex items-center justify-center whitespace-nowrap rounded-md bg-button text-center text-button-text lg:hidden" href="/contact">Message Us</a>
+</nav>
+<div class="fixed inset-0 z-30 bg-black/50 lg:hidden" style="display:none" x-show="$store.menu.isOpen" x-data x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"></div>
+<div class="navbar fixed inset-0 z-40 ml-[20vw] flex flex-col overflow-y-auto bg-background px-8 shadow-md lg:ml-[60vw] lg:hidden" style="display:none" x-show="$store.menu.isOpen" x-data x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 translate-x-full" x-transition:enter-end="opacity-100 translate-x-0" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 translate-x-0" x-transition:leave-end="opacity-0 translate-x-full" x-on:keydown.window.escape="$store.menu.isOpen = false" x-on:click.outside="$store.menu.isOpen = false">
+<ul class="flex flex-grow flex-col pb-12">
+<li class="logo py-4 text-3xl"><a class="block" href="/">Wealthy Dates Club</a></li>
+<li class="border-t border-current"></li>
+<li class="text-2xl  lg:hidden" x-data="{'expand': true}">
+<div class="flex cursor-pointer items-center gap-4 py-3" x-on:click="expand = !expand">
+<div>Dating Services</div>
+<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="h-5 w-5 fill-current transition-transform duration-100" :class="{ 'rotate-180': expand }">
+<path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+</svg>
+</div>
+<ul class="flex flex-col overflow-hidden pl-4 transition-all duration-100" x-ref="menu1" style="max-height: initial" x-bind:style="(!expand || $refs.menu1.scrollHeight) ? expand ? 'max-height: ' + $refs.menu1.scrollHeight + 'px' : 'max-height: 0' : 'max-height: initial'">
+<li class="text-xl capitalize " role="menuitem">
+<a class="my-3 block" href="/online-friendship">Online Friendship</a>
+</li>
+<li class="text-xl capitalize " role="menuitem">
+<a class="my-3 block" href="/membership-sign-up">Membership sign-up</a>
+</li>
+<li class="text-xl capitalize " role="menuitem">
+<a class="my-3 block" href="/paid-dating">Paid Dating</a>
+</li>
+<li class="text-xl capitalize " role="menuitem">
+<a class="my-3 block" href="/customer-support-team">Customer support team</a>
+</li>
+<li class="text-xl capitalize " role="menuitem">
+<a class="my-3 block" href="/profile-creation">Profile creation</a>
+</li>
+</ul>
+</li><li class="text-2xl  lg:hidden" x-on:click="$store.menu.isOpen = false">
+<a class="my-3 block" href="/about">About</a>
+</li><li class="text-2xl  lg:hidden" x-on:click="$store.menu.isOpen = false">
+<a class="my-3 block" href="/contact">Contact</a>
+</li>
+<li class="mt-auto lg:hidden">
+<a class="nav-button flex items-center justify-center whitespace-nowrap rounded-md bg-button text-center text-button-text" href="/contact">Message Us</a>
+</li>
+</ul>
+</div>
+<div class="nav-pad-offset">
+<div class="layer fill-svh relative flex min-h-[30rem] flex-col bg-highlight">
+<div class="layer-content flex flex-grow flex-col items-center justify-center">
+<div class="relative my-8 flex min-h-[14rem] flex-col justify-end sm:ml-[15%]">
+<svg class="absolute inset-0 z-0 aspect-[1.2] w-64 stroke-primary md:w-80 lg:w-96">
+<mask id="mask" maskUnits="userSpaceOnUse">
+<rect width="100%" height="100%" fill="white" />
+<rect x="20%" y="25%" width="100%" height="100%" fill="black" />
+</mask>
+<rect class="transition-all ease-in-out duration-[2s] stroke-20 md:stroke-40" width="100%" height="100%" fill="none" stroke-width="40" stroke-dashoffset="1550" stroke-dasharray="1550" mask="url(#mask)" x-data x-anim-class.dashoffset-zero></rect>
+</svg>
+<div class="from-bottom z-0 ml-10 mt-14 flex flex-col items-start justify-center gap-4 p-6 md:ml-20 md:p-8" x-data x-anim-fade>
+<h1 class="max-w-full whitespace-pre-line break-words text-2xl/tight font-semibold sm:text-4xl/tight md:text-6xl/tight lg:text-7xl/tight text-highlight-text">Welcome to Wealthy Dates Club, the ultimate dating service for singles worldwide</h1>
+<a class="from-left stagger-1 button ml-8 mt-auto bg-highlight-button px-12 py-3 text-lg text-highlight-button-text shadow-md md:ml-24" x-data x-anim-fade href="/contact">Connect Now</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="layer">
+<div class="layer-content flex flex-col gap-8 py-12 md:py-24 lg:flex-row lg:gap-16">
+<div class="flex min-w-0 flex-col lg:basis-1/2 lg:justify-center">
+<div class="from-bottom subheading-typical whitespace-pre-line break-words font-semibold lg:text-lg" x-data x-anim-fade>Exclusive Dating Service</div>
+<div class="from-bottom heading-typical mt-4 whitespace-pre-line break-words font-semibold" x-data x-anim-fade>Find love and companionship with our elite dating service</div>
+<div class="mt-4 whitespace-pre-line break-words lg:text-lg">With decades of experience, we understand your desires and provide exclusive membership, dedicated advisors, and an easy profile creation process. Join us today!</div>
+</div>
+<div class="grid grid-cols-2 gap-6 lg:basis-1/2 lg:grid-cols-3 lg:self-start">
+<a href="/exclusive-vip-membership" class="from-right stagger-1 flex flex-col gap-3 bg-alt p-4 text-alt-text" x-data x-anim-fade>
+<div class="whitespace-pre-line break-words text-center text-xl font-semibold lg:text-2xl">VIP Access</div>
+<div class="whitespace-pre-line break-words text-center">Get access to high-profile singles and personalized matchmaking services.</div>
+</a>
+<a href="/dedicated-relationship-advisors" class="relative col-span-2 row-start-2 flex flex-col lg:col-span-1 lg:row-start-auto" aria-labelledby="s1b2">
+<svg class="absolute -right-3 -top-3 -z-10 aspect-square w-16 stroke-primary">
+<rect class="transition-all ease-in-out duration-[2s]" width="100%" height="100%" fill="none" stroke-width="0.5rem" stroke-dashoffset="1550" stroke-dasharray="1550" x-data x-anim-class.dashoffset-zero></rect>
+</svg>
+<div class="delay-2 z-0 flex flex-grow flex-col gap-3 bg-primary p-4 text-primary-text lg:aspect-[0.75]" x-data x-anim-fade>
+<div id="s1b2" class="whitespace-pre-line break-words text-center text-xl font-semibold lg:text-2xl">Personal Guidance</div>
+<div class="whitespace-pre-line break-words text-center">Our dedicated relationship advisors are here to support you every step of the way.</div>
+</div>
+<svg class="pointer-events-none absolute inset-0 z-0 h-full w-full stroke-primary">
+<rect class="transition-all ease-in-out duration-[2s]" width="100%" height="100%" fill="none" stroke-width="0.5rem" stroke-dashoffset="1550" stroke-dasharray="1550" x-data x-anim-class.dashoffset-zero></rect>
+</svg>
+</a>
+<a href="/easy-profile-creation-process" class="from-left stagger-1 flex flex-col gap-3 bg-alt p-4 text-alt-text" x-data x-anim-fade>
+<div class="whitespace-pre-line break-words text-center text-xl font-semibold lg:text-2xl">Effortless Setup</div>
+<div class="whitespace-pre-line break-words text-center">Our user-friendly platform makes it easy to showcase your true self.</div>
+</a>
+</div>
+</div>
+</div>
+<div class="overflow-hidden bg-tertiary">
+<div class="relative flex flex-col gap-8 py-12 md:py-24">
+<div class="flex flex-col">
+<div class="from-bottom subheading-typical mx-8 whitespace-pre-line break-words text-center font-semibold text-tertiary-text lg:text-lg" x-data x-anim-fade>Find Love Online</div>
+<div class="from-bottom heading-typical mx-8 mt-4 max-w-full self-center whitespace-pre-line break-words text-center font-semibold text-tertiary-text sm:max-w-3xl" x-data x-anim-fade>Join our exclusive dating community today</div>
+</div>
+<div class="from-bottom stagger-1 relative overflow-hidden" x-data="{ embla: null }" x-anim-fade x-init="
+        () => {
+          embla = EmblaCarousel($refs.viewport, { skipSnaps: true, containScroll: 'trimSnaps', breakpoints: {'(min-width: 768px)': {containScroll: false, align: 'center', startIndex:2}} })
+        }
+      ">
+<div x-ref="viewport">
+<div class="flex">
+<a href="/online-friendship" class="relative stagger-0 mx-1 flex flex-col bg-highlight2 ml-8 group">
+<div class="relative flex w-72 max-w-[80vw] flex-grow flex-col items-center gap-2 px-8 py-16 text-center text-highlight2-text border-2 border-transparent transition-colors group-hover:border-white group-hover:bg-black/40">
+<div class="flex max-w-full basis-16 flex-col justify-center md:basis-20">
+<div class="whitespace-pre-line break-words text-2xl lg:text-3xl">Socialize</div>
+</div>
+<div class="max-w-full whitespace-pre-line break-words">Discover new friendships and expand your social circle with our online friendship service.</div>
+<div class="mt-12 flex flex-grow flex-col justify-end">
+<div class="button max-w-full self-center whitespace-pre-line break-words border-2 border-highlight2-button text-highlight2-button py-1.5 transition-colors group-hover:border-white group-hover:bg-white group-hover:text-black">More</div>
+</div>
+</div>
+</a><a href="/membership-sign-up" class="relative stagger-1 mx-1 flex flex-col bg-highlight2  group">
+<div class="relative flex w-72 max-w-[80vw] flex-grow flex-col items-center gap-2 px-8 py-16 text-center text-highlight2-text border-2 border-transparent transition-colors group-hover:border-white group-hover:bg-black/40">
+<div class="flex max-w-full basis-16 flex-col justify-center md:basis-20">
+<div class="whitespace-pre-line break-words text-2xl lg:text-3xl">Join</div>
+</div>
+<div class="max-w-full whitespace-pre-line break-words">Sign up for membership and gain access to a world of potential matches.</div>
+<div class="mt-12 flex flex-grow flex-col justify-end">
+<div class="button max-w-full self-center whitespace-pre-line break-words border-2 border-highlight2-button text-highlight2-button py-1.5 transition-colors group-hover:border-white group-hover:bg-white group-hover:text-black">More</div>
+</div>
+</div>
+</a><a href="/paid-dating" class="relative stagger-2 mx-1 flex flex-col bg-highlight2  group">
+<div class="relative flex w-72 max-w-[80vw] flex-grow flex-col items-center gap-2 px-8 py-16 text-center text-highlight2-text border-2 border-transparent transition-colors group-hover:border-white group-hover:bg-black/40">
+<div class="flex max-w-full basis-16 flex-col justify-center md:basis-20">
+<div class="whitespace-pre-line break-words text-2xl lg:text-3xl">Indulge</div>
+</div>
+<div class="max-w-full whitespace-pre-line break-words">Treat yourself to unforgettable dates with attractive singles around the world.</div>
+<div class="mt-12 flex flex-grow flex-col justify-end">
+<div class="button max-w-full self-center whitespace-pre-line break-words border-2 border-highlight2-button text-highlight2-button py-1.5 transition-colors group-hover:border-white group-hover:bg-white group-hover:text-black">More</div>
+</div>
+</div>
+</a><a href="/customer-support-team" class="relative stagger-3 mx-1 flex flex-col bg-highlight2  group">
+<div class="relative flex w-72 max-w-[80vw] flex-grow flex-col items-center gap-2 px-8 py-16 text-center text-highlight2-text border-2 border-transparent transition-colors group-hover:border-white group-hover:bg-black/40">
+<div class="flex max-w-full basis-16 flex-col justify-center md:basis-20">
+<div class="whitespace-pre-line break-words text-2xl lg:text-3xl">Assist</div>
+</div>
+<div class="max-w-full whitespace-pre-line break-words">Enjoy peace of mind knowing that our customer support team is available to help you every step of the way.</div>
+<div class="mt-12 flex flex-grow flex-col justify-end">
+<div class="button max-w-full self-center whitespace-pre-line break-words border-2 border-highlight2-button text-highlight2-button py-1.5 transition-colors group-hover:border-white group-hover:bg-white group-hover:text-black">More</div>
+</div>
+</div>
+</a><a href="/profile-creation" class="relative stagger-4 mx-1 flex flex-col bg-highlight2 mr-8 group">
+<div class="relative flex w-72 max-w-[80vw] flex-grow flex-col items-center gap-2 px-8 py-16 text-center text-highlight2-text border-2 border-transparent transition-colors group-hover:border-white group-hover:bg-black/40">
+<div class="flex max-w-full basis-16 flex-col justify-center md:basis-20">
+<div class="whitespace-pre-line break-words text-2xl lg:text-3xl">Stand Out</div>
+</div>
+<div class="max-w-full whitespace-pre-line break-words">Stand out from the crowd and attract potential matches with a well-crafted profile.</div>
+<div class="mt-12 flex flex-grow flex-col justify-end">
+<div class="button max-w-full self-center whitespace-pre-line break-words border-2 border-highlight2-button text-highlight2-button py-1.5 transition-colors group-hover:border-white group-hover:bg-white group-hover:text-black">More</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="layer">
+<div class="layer-content flex flex-col py-12 md:py-24" x-data="{stage: 0}">
+<div class="from-bottom subheading-typical whitespace-pre-line break-words text-center font-semibold lg:text-lg" x-data x-anim-fade>Find Your Perfect Match Online</div>
+<div class="from-bottom heading-typical mt-4 whitespace-pre-line break-words text-center font-semibold" x-data x-anim-fade>Discover a world of possibilities with our exclusive online dating service</div>
+<div class="mt-10 flex flex-col gap-6 md:grid md:grid-cols-3"><div class="from-bottom group relative h-[270px] overflow-hidden bg-secondary sm:h-[300px] " :class="{'block': stage >= 0, 'hidden': stage < 0}" x-data x-anim-fade="stage >= 0">
+<div class="absolute inset-0 z-10 flex flex-col items-center justify-center whitespace-pre-line break-words p-8 text-center text-2xl font-semibold text-secondary-text lg:text-4xl">Unlimited Connections</div>
+<div class="absolute inset-0 z-20 flex translate-y-full flex-col items-center justify-center whitespace-pre-line break-words bg-primary p-8 text-center text-primary-text transition-transform duration-300 ease-in-out group-hover:translate-y-0 lg:text-lg">Connect with like-minded individuals from around the world effortlessly.</div>
+</div>
+<div class="from-bottom group relative h-[270px] overflow-hidden bg-secondary sm:h-[300px] " :class="{'block': stage >= 0, 'hidden': stage < 0}" x-data x-anim-fade="stage >= 0">
+<div class="absolute inset-0 z-10 flex flex-col items-center justify-center whitespace-pre-line break-words p-8 text-center text-2xl font-semibold text-secondary-text lg:text-4xl">Realize Your Romantic Dreams</div>
+<div class="absolute inset-0 z-20 flex translate-y-full flex-col items-center justify-center whitespace-pre-line break-words bg-primary p-8 text-center text-primary-text transition-transform duration-300 ease-in-out group-hover:translate-y-0 lg:text-lg">Turn your romantic fantasies into reality by meeting compatible partners online.</div>
+</div>
+<div class="from-bottom group relative h-[270px] overflow-hidden bg-secondary sm:h-[300px] " :class="{'block': stage >= 0, 'hidden': stage < 0}" x-data x-anim-fade="stage >= 0">
+<div class="absolute inset-0 z-10 flex flex-col items-center justify-center whitespace-pre-line break-words p-8 text-center text-2xl font-semibold text-secondary-text lg:text-4xl">Easy Profile Creation</div>
+<div class="absolute inset-0 z-20 flex translate-y-full flex-col items-center justify-center whitespace-pre-line break-words bg-primary p-8 text-center text-primary-text transition-transform duration-300 ease-in-out group-hover:translate-y-0 lg:text-lg">Create an appealing profile in minutes and showcase your authentic self to potential matches.</div>
+</div>
+<div class="from-bottom group relative h-[270px] overflow-hidden bg-secondary sm:h-[300px] hidden" :class="{'block': stage >= 1, 'hidden': stage < 1}" x-data x-anim-fade="stage >= 1">
+<div class="absolute inset-0 z-10 flex flex-col items-center justify-center whitespace-pre-line break-words p-8 text-center text-2xl font-semibold text-secondary-text lg:text-4xl">Exclusive VIP Membership</div>
+<div class="absolute inset-0 z-20 flex translate-y-full flex-col items-center justify-center whitespace-pre-line break-words bg-primary p-8 text-center text-primary-text transition-transform duration-300 ease-in-out group-hover:translate-y-0 lg:text-lg">Unlock special benefits and access premium features with our VIP membership.</div>
+</div>
+<div class="from-bottom group relative h-[270px] overflow-hidden bg-secondary sm:h-[300px] hidden" :class="{'block': stage >= 1, 'hidden': stage < 1}" x-data x-anim-fade="stage >= 1">
+<div class="absolute inset-0 z-10 flex flex-col items-center justify-center whitespace-pre-line break-words p-8 text-center text-2xl font-semibold text-secondary-text lg:text-4xl">Reliable Customer Support Team</div>
+<div class="absolute inset-0 z-20 flex translate-y-full flex-col items-center justify-center whitespace-pre-line break-words bg-primary p-8 text-center text-primary-text transition-transform duration-300 ease-in-out group-hover:translate-y-0 lg:text-lg">Get assistance from our dedicated support team whenever you need it.</div>
+</div>
+<div class="from-bottom group relative h-[270px] overflow-hidden bg-secondary sm:h-[300px] hidden" :class="{'block': stage >= 1, 'hidden': stage < 1}" x-data x-anim-fade="stage >= 1">
+<div class="absolute inset-0 z-10 flex flex-col items-center justify-center whitespace-pre-line break-words p-8 text-center text-2xl font-semibold text-secondary-text lg:text-4xl">Find Love at Any Stage of Life</div>
+<div class="absolute inset-0 z-20 flex translate-y-full flex-col items-center justify-center whitespace-pre-line break-words bg-primary p-8 text-center text-primary-text transition-transform duration-300 ease-in-out group-hover:translate-y-0 lg:text-lg">Discover companionship and romance no matter your age or life circumstances.</div>
+</div>
+<div class="from-bottom group relative h-[270px] overflow-hidden bg-secondary sm:h-[300px] hidden" :class="{'block': stage >= 2, 'hidden': stage < 2}" x-data x-anim-fade="stage >= 2">
+<div class="absolute inset-0 z-10 flex flex-col items-center justify-center whitespace-pre-line break-words p-8 text-center text-2xl font-semibold text-secondary-text lg:text-4xl">Advanced Matchmaking Algorithms</div>
+<div class="absolute inset-0 z-20 flex translate-y-full flex-col items-center justify-center whitespace-pre-line break-words bg-primary p-8 text-center text-primary-text transition-transform duration-300 ease-in-out group-hover:translate-y-0 lg:text-lg">Benefit from our intelligent algorithms that match you with compatible individuals.</div>
+</div>
+<div class="from-bottom group relative h-[270px] overflow-hidden bg-secondary sm:h-[300px] hidden" :class="{'block': stage >= 2, 'hidden': stage < 2}" x-data x-anim-fade="stage >= 2">
+<div class="absolute inset-0 z-10 flex flex-col items-center justify-center whitespace-pre-line break-words p-8 text-center text-2xl font-semibold text-secondary-text lg:text-4xl">Expand Your Social Circle Worldwide</div>
+<div class="absolute inset-0 z-20 flex translate-y-full flex-col items-center justify-center whitespace-pre-line break-words bg-primary p-8 text-center text-primary-text transition-transform duration-300 ease-in-out group-hover:translate-y-0 lg:text-lg">Connect with singles from different cultures, backgrounds, and regions around the globe.</div>
+</div>
+<div class="from-bottom group relative h-[270px] overflow-hidden bg-secondary sm:h-[300px] hidden" :class="{'block': stage >= 2, 'hidden': stage < 2}" x-data x-anim-fade="stage >= 2">
+<div class="absolute inset-0 z-10 flex flex-col items-center justify-center whitespace-pre-line break-words p-8 text-center text-2xl font-semibold text-secondary-text lg:text-4xl">Safe and Secure Online Environment</div>
+<div class="absolute inset-0 z-20 flex translate-y-full flex-col items-center justify-center whitespace-pre-line break-words bg-primary p-8 text-center text-primary-text transition-transform duration-300 ease-in-out group-hover:translate-y-0 lg:text-lg">Rest assured that your privacy and safety are our top priorities.</div>
+</div>
+<div class="from-bottom group relative h-[270px] overflow-hidden bg-secondary sm:h-[300px] hidden" :class="{'block': stage >= 3, 'hidden': stage < 3}" x-data x-anim-fade="stage >= 3">
+<div class="absolute inset-0 z-10 flex flex-col items-center justify-center whitespace-pre-line break-words p-8 text-center text-2xl font-semibold text-secondary-text lg:text-4xl">Accessible Membership Sign-Up Process</div>
+<div class="absolute inset-0 z-20 flex translate-y-full flex-col items-center justify-center whitespace-pre-line break-words bg-primary p-8 text-center text-primary-text transition-transform duration-300 ease-in-out group-hover:translate-y-0 lg:text-lg">Join our dating community with a simple and hassle-free sign-up process.</div>
+</div>
+<div class="from-bottom group relative h-[270px] overflow-hidden bg-secondary sm:h-[300px] hidden" :class="{'block': stage >= 3, 'hidden': stage < 3}" x-data x-anim-fade="stage >= 3">
+<div class="absolute inset-0 z-10 flex flex-col items-center justify-center whitespace-pre-line break-words p-8 text-center text-2xl font-semibold text-secondary-text lg:text-4xl">Dedicated Relationship Advisors</div>
+<div class="absolute inset-0 z-20 flex translate-y-full flex-col items-center justify-center whitespace-pre-line break-words bg-primary p-8 text-center text-primary-text transition-transform duration-300 ease-in-out group-hover:translate-y-0 lg:text-lg">Receive personalized support and guidance from our experienced relationship advisors.</div>
+</div>
+<div class="from-bottom group relative h-[270px] overflow-hidden bg-secondary sm:h-[300px] hidden" :class="{'block': stage >= 3, 'hidden': stage < 3}" x-data x-anim-fade="stage >= 3">
+<div class="absolute inset-0 z-10 flex flex-col items-center justify-center whitespace-pre-line break-words p-8 text-center text-2xl font-semibold text-secondary-text lg:text-4xl">Exciting Paid Dating Opportunities</div>
+<div class="absolute inset-0 z-20 flex translate-y-full flex-col items-center justify-center whitespace-pre-line break-words bg-primary p-8 text-center text-primary-text transition-transform duration-300 ease-in-out group-hover:translate-y-0 lg:text-lg">Explore paid dating options for unique experiences and memorable moments.</div>
+</div>
+</div>
+<div class="from-bottom mt-10 flex items-center justify-center gap-4" :class="{'hidden': stage >= 3}" x-data x-anim-fade>
+<button type="button" class="button border-2 border-button text-button" x-on:click="stage++; setTimeout(() => ScrollTrigger.refresh(true))">
+Load More
+</button>
+<button type="button" class="button w-36 border-2 border-button bg-button text-button-text shadow-md" x-on:click="stage = 3; setTimeout(() => ScrollTrigger.refresh(true))">
+View All
+</button>
+</div>
+</div>
+</div>
+<div class="layer relative bg-alt pb-32">
+<div class="layer-content flex flex-col py-12 md:py-24 text-alt-text">
+<div class="from-bottom subheading-typical whitespace-pre-line break-words text-center font-semibold lg:text-lg" x-data x-anim-fade>Who We Serve</div>
+<div class="from-bottom heading-typical mt-4 whitespace-pre-line break-words text-center" x-data x-anim-fade>Discover how Wealthy Dates Club can meet your dating needs</div>
+</div>
+</div>
+<div class="relative -mt-36 flex flex-col pb-12 md:pb-24" x-data="{ embla: null, current:2}" x-init="
+    () => {
+      embla = EmblaCarousel($refs.viewport, { align: 'center', containScroll: false, skipSnaps: true, duration: 20, startIndex:2})
+      embla.on('select', () => { current = embla.selectedScrollSnap(); })
+    }
+  ">
+<div x-ref="viewport" class="overflow-hidden">
+<div class="flex">
+<div class="flex flex-col ml-8 lg:ml-32">
+<div class="flex basis-64 origin-center scale-50 cursor-pointer bg-highlight2 text-highlight2-text transition-transform duration-500 ease-in-out" x-on:click="embla.scrollTo(0)" :class="{'scale-100': current == 0, 'scale-50': current != 0, 'translate-x-[4rem] md:translate-x-[5rem]': current == 1, 'translate-x-[13rem] md:translate-x-[16rem]': current == 2, 'translate-x-[22rem] md:translate-x-[27rem]': current == 3, 'translate-x-[31rem] md:translate-x-[38rem]': current == 4, '-translate-x-[4rem] md:-translate-x-[5rem]': current == -1, '-translate-x-[13rem] md:-translate-x-[16rem]': current == -2, '-translate-x-[22rem] md:-translate-x-[27rem]': current == -3, '-translate-x-[31rem] md:-translate-x-[38rem]': current == -4}">
+<div class="relative z-0 flex w-80 min-w-0 flex-col justify-center gap-4 p-8 md:w-96">
+<div class="whitespace-pre-line break-words text-center text-2xl font-semibold lg:text-3xl">Ideal</div>
+<div class="invisible whitespace-pre-line break-words text-center" :class="{'invisible': current != 0, 'visible': current == 0}">Join Wealthy Dates Club today and start connecting with other singles worldwide.</div>
+</div>
+</div>
+</div><div class="flex flex-col ">
+<div class="flex basis-64 origin-center scale-50 cursor-pointer bg-highlight2 text-highlight2-text transition-transform duration-500 ease-in-out" x-on:click="embla.scrollTo(1)" :class="{'scale-100': current == 1, 'scale-50': current != 1, 'translate-x-[4rem] md:translate-x-[5rem]': current == 2, 'translate-x-[13rem] md:translate-x-[16rem]': current == 3, 'translate-x-[22rem] md:translate-x-[27rem]': current == 4, 'translate-x-[31rem] md:translate-x-[38rem]': current == 5, '-translate-x-[4rem] md:-translate-x-[5rem]': current == 0, '-translate-x-[13rem] md:-translate-x-[16rem]': current == -1, '-translate-x-[22rem] md:-translate-x-[27rem]': current == -2, '-translate-x-[31rem] md:-translate-x-[38rem]': current == -3}">
+<div class="relative z-0 flex w-80 min-w-0 flex-col justify-center gap-4 p-8 md:w-96">
+<div class="whitespace-pre-line break-words text-center text-2xl font-semibold lg:text-3xl">Professional</div>
+<div class="invisible whitespace-pre-line break-words text-center" :class="{'invisible': current != 1, 'visible': current == 1}">Expand your network and find love with fellow job seekers on Wealthy Dates Club.</div>
+</div>
+</div>
+</div><div class="flex flex-col ">
+<div class="flex basis-64 origin-center scale-100 cursor-pointer bg-highlight2 text-highlight2-text transition-transform duration-500 ease-in-out" x-on:click="embla.scrollTo(2)" :class="{'scale-100': current == 2, 'scale-50': current != 2, 'translate-x-[4rem] md:translate-x-[5rem]': current == 3, 'translate-x-[13rem] md:translate-x-[16rem]': current == 4, 'translate-x-[22rem] md:translate-x-[27rem]': current == 5, 'translate-x-[31rem] md:translate-x-[38rem]': current == 6, '-translate-x-[4rem] md:-translate-x-[5rem]': current == 1, '-translate-x-[13rem] md:-translate-x-[16rem]': current == 0, '-translate-x-[22rem] md:-translate-x-[27rem]': current == -1, '-translate-x-[31rem] md:-translate-x-[38rem]': current == -2}">
+<div class="relative z-0 flex w-80 min-w-0 flex-col justify-center gap-4 p-8 md:w-96">
+<div class="whitespace-pre-line break-words text-center text-2xl font-semibold lg:text-3xl">Wise</div>
+<div class=" whitespace-pre-line break-words text-center" :class="{'invisible': current != 2, 'visible': current == 2}">Join our senior-friendly platform and form meaningful connections with other love-seeking seniors.</div>
+</div>
+</div>
+</div><div class="flex flex-col ">
+<div class="flex basis-64 origin-center scale-50 cursor-pointer bg-highlight2 text-highlight2-text transition-transform duration-500 ease-in-out" x-on:click="embla.scrollTo(3)" :class="{'scale-100': current == 3, 'scale-50': current != 3, 'translate-x-[4rem] md:translate-x-[5rem]': current == 4, 'translate-x-[13rem] md:translate-x-[16rem]': current == 5, 'translate-x-[22rem] md:translate-x-[27rem]': current == 6, 'translate-x-[31rem] md:translate-x-[38rem]': current == 7, '-translate-x-[4rem] md:-translate-x-[5rem]': current == 2, '-translate-x-[13rem] md:-translate-x-[16rem]': current == 1, '-translate-x-[22rem] md:-translate-x-[27rem]': current == 0, '-translate-x-[31rem] md:-translate-x-[38rem]': current == -1}">
+<div class="relative z-0 flex w-80 min-w-0 flex-col justify-center gap-4 p-8 md:w-96">
+<div class="whitespace-pre-line break-words text-center text-2xl font-semibold lg:text-3xl">Ambitious</div>
+<div class="invisible whitespace-pre-line break-words text-center" :class="{'invisible': current != 3, 'visible': current == 3}">Don't let busy schedules hinder your love life. Join Wealthy Dates Club and connect with other job seekers.</div>
+</div>
+</div>
+</div><div class="flex flex-col mr-8 lg:mr-32">
+<div class="flex basis-64 origin-center scale-50 cursor-pointer bg-highlight2 text-highlight2-text transition-transform duration-500 ease-in-out" x-on:click="embla.scrollTo(4)" :class="{'scale-100': current == 4, 'scale-50': current != 4, 'translate-x-[4rem] md:translate-x-[5rem]': current == 5, 'translate-x-[13rem] md:translate-x-[16rem]': current == 6, 'translate-x-[22rem] md:translate-x-[27rem]': current == 7, 'translate-x-[31rem] md:translate-x-[38rem]': current == 8, '-translate-x-[4rem] md:-translate-x-[5rem]': current == 3, '-translate-x-[13rem] md:-translate-x-[16rem]': current == 2, '-translate-x-[22rem] md:-translate-x-[27rem]': current == 1, '-translate-x-[31rem] md:-translate-x-[38rem]': current == 0}">
+<div class="relative z-0 flex w-80 min-w-0 flex-col justify-center gap-4 p-8 md:w-96">
+<div class="whitespace-pre-line break-words text-center text-2xl font-semibold lg:text-3xl">Global</div>
+<div class="invisible whitespace-pre-line break-words text-center" :class="{'invisible': current != 4, 'visible': current == 4}">From London to Mumbai, find love and friendship with singles worldwide on Wealthy Dates Club.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="layer pb-8 pt-4 lg:pb-20">
+<div class="layer-content">
+<div class="relative overflow-hidden" x-data="{ embla: null }" x-init="
+        () => {
+          embla = EmblaCarousel($refs.viewport, { align: 'start', loop: true }, [Autoplay()])
+        }
+      ">
+<div x-ref="viewport">
+<div class="flex">
+<div class="flex min-w-0 flex-none basis-full flex-col px-8 md:basis-1/2">
+<div class="relative flex flex-grow flex-col px-10 py-6">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="absolute left-0 top-0 h-10 w-6 rotate-180 fill-current">
+<path d="M192 296c0 66.3-53.7 120-120 120H64 32l0-64H64h8c30.9 0 56-25.1 56-56v-8L0 288V96H192l0 96v96 8zm256 0c0 66.3-53.7 120-120 120h-8H288V352h32 8c30.9 0 56-25.1 56-56v-8l-128 0 0-192H448v96l0 96v8z" />
+</svg>
+<div class="basis-24 whitespace-pre-line break-words text-lg italic lg:basis-24 xl:text-xl">Wealthy Dates Club is the best dating service I've ever experienced. They have a wide range of members from all over the world, and their customer support team is always there to assist me. I highly recommend it!</div>
+<div class="mt-2 whitespace-pre-line break-words font-semibold uppercase lg:text-lg">Jon D.</div>
+</div>
+</div>
+<div class="flex min-w-0 flex-none basis-full flex-col px-8 md:basis-1/2">
+<div class="relative flex flex-grow flex-col px-10 py-6">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="absolute left-0 top-0 h-10 w-6 rotate-180 fill-current">
+<path d="M192 296c0 66.3-53.7 120-120 120H64 32l0-64H64h8c30.9 0 56-25.1 56-56v-8L0 288V96H192l0 96v96 8zm256 0c0 66.3-53.7 120-120 120h-8H288V352h32 8c30.9 0 56-25.1 56-56v-8l-128 0 0-192H448v96l0 96v8z" />
+</svg>
+<div class="basis-24 whitespace-pre-line break-words text-lg italic lg:basis-24 xl:text-xl">I was skeptical about online dating until I joined Wealthy Dates Club. It's an amazing platform for meeting new friends and potential partners. The profile creation process is simple and the membership options are great.</div>
+<div class="mt-2 whitespace-pre-line break-words font-semibold uppercase lg:text-lg">Samantha S.</div>
+</div>
+</div>
+<div class="flex min-w-0 flex-none basis-full flex-col px-8 md:basis-1/2">
+<div class="relative flex flex-grow flex-col px-10 py-6">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="absolute left-0 top-0 h-10 w-6 rotate-180 fill-current">
+<path d="M192 296c0 66.3-53.7 120-120 120H64 32l0-64H64h8c30.9 0 56-25.1 56-56v-8L0 288V96H192l0 96v96 8zm256 0c0 66.3-53.7 120-120 120h-8H288V352h32 8c30.9 0 56-25.1 56-56v-8l-128 0 0-192H448v96l0 96v8z" />
+</svg>
+<div class="basis-24 whitespace-pre-line break-words text-lg italic lg:basis-24 xl:text-xl">As a job seeker, I found Wealthy Dates Club incredibly helpful in finding like-minded individuals who share my goals and interests. The dedicated relationship advisors provided valuable guidance throughout my journey to find love and career success.</div>
+<div class="mt-2 whitespace-pre-line break-words font-semibold uppercase lg:text-lg">Alex P.</div>
+</div>
+</div>
+<div class="flex min-w-0 flex-none basis-full flex-col px-8 md:basis-1/2">
+<div class="relative flex flex-grow flex-col px-10 py-6">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="absolute left-0 top-0 h-10 w-6 rotate-180 fill-current">
+<path d="M192 296c0 66.3-53.7 120-120 120H64 32l0-64H64h8c30.9 0 56-25.1 56-56v-8L0 288V96H192l0 96v96 8zm256 0c0 66.3-53.7 120-120 120h-8H288V352h32 8c30.9 0 56-25.1 56-56v-8l-128 0 0-192H448v96l0 96v8z" />
+</svg>
+<div class="basis-24 whitespace-pre-line break-words text-lg italic lg:basis-24 xl:text-xl">Love has no age limit, and Wealthy Dates Club understands that. Being a senior, I was able to connect with other love-seeking seniors who were looking for companionship. The platform made it easy for us to connect and start meaningful relationships.</div>
+<div class="mt-2 whitespace-pre-line break-words font-semibold uppercase lg:text-lg">Eleanor W.</div>
+</div>
+</div>
+<div class="flex min-w-0 flex-none basis-full flex-col px-8 md:basis-1/2">
+<div class="relative flex flex-grow flex-col px-10 py-6">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="absolute left-0 top-0 h-10 w-6 rotate-180 fill-current">
+<path d="M192 296c0 66.3-53.7 120-120 120H64 32l0-64H64h8c30.9 0 56-25.1 56-56v-8L0 288V96H192l0 96v96 8zm256 0c0 66.3-53.7 120-120 120h-8H288V352h32 8c30.9 0 56-25.1 56-56v-8l-128 0 0-192H448v96l0 96v8z" />
+</svg>
+<div class="basis-24 whitespace-pre-line break-words text-lg italic lg:basis-24 xl:text-xl">In today's fast-paced world, it can be quite challenging to meet new people. However, Wealthy Dates Club made it possible for me to connect with singles worldwide. Now, distance is no longer an obstacle in my quest for love!</div>
+<div class="mt-2 whitespace-pre-line break-words font-semibold uppercase lg:text-lg">Michael C.</div>
+</div>
+</div>
+</div>
+</div>
+<button x-on:click="embla.scrollPrev()" class="absolute left-0 top-1/2 -mt-4 h-8 w-8 text-current" type="button" aria-label="Previous">
+<svg class="h-8 w-8 fill-current" viewBox="0 0 320 512">
+<path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+</svg>
+</button>
+<button x-on:click="embla.scrollNext()" class="absolute right-0 top-1/2 -mt-4 h-8 w-8 text-current" type="button" aria-label="Next">
+<svg class="h-8 w-8 fill-current" viewBox="0 0 320 512">
+<path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+</svg>
+</button>
+</div>
+</div>
+</div>
+<div class="layer relative overflow-hidden bg-highlight">
+<div class="length-2 layer-content relative flex flex-col py-12 md:items-center md:py-24 text-highlight-text" x-data x-anim-fade>
+<div class="heading-typical max-w-3xl whitespace-pre-line break-words text-center font-semibold">Tired of swiping left? Frustrated with finding meaningful connections?</div>
+<div class="mt-6 max-w-3xl whitespace-pre-line break-words text-center lg:text-lg">We understand the frustrations of online dating. Let us help you find true love.</div>
+</div>
+</div>
+<div class="layer">
+<div class="layer-content flex flex-col gap-8 py-12 md:flex-row md:gap-16 md:py-24">
+<div class="flex min-w-0 flex-col md:basis-1/2 md:pt-8">
+<div class="from-left subheading-typical whitespace-pre-line break-words font-semibold lg:text-lg" x-data x-anim-fade>Frequently Asked Questions</div>
+<div class="from-left heading-typical mt-4 whitespace-pre-line break-words font-semibold" x-data x-anim-fade>Find answers to common questions about our dating service</div>
+</div>
+<ul class="length-2 min-w-0 md:basis-1/2" x-data="{selectedIndex:1}" x-anim-fade>
+<li class="relative ">
+<button type="button" class="w-full px-4 py-5 text-left bg-primary text-primary-text" :class="{ 'bg-primary text-primary-text': selectedIndex === 1, 'bg-alt text-alt-text': selectedIndex !== 1 }" x-on:click="selectedIndex !== 1 ? selectedIndex = 1 : selectedIndex = null; setTimeout(() => ScrollTrigger.refresh(true))">
+<div class="flex items-center justify-between gap-4 pr-4 text-lg font-semibold">
+<span class="overflow-hidden whitespace-pre-line break-words">How does the membership sign-up process work?</span>
+<svg class="h-6 w-6 flex-shrink-0 fill-current transition duration-100 rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path class :class="{ 'block': selectedIndex === 1, 'hidden': selectedIndex !== 1 }" d="M256 464a208 208 0 1 1 0-416 208 208 0 1 1 0 416zM256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241L239 345c9.4 9.4 24.6 9.4 33.9 0L377 241c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-87 87-87-87c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+<path class="hidden" :class="{ 'block': selectedIndex !== 1, 'hidden': selectedIndex === 1 }" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM377 271L273 167c-9.4-9.4-24.6-9.4-33.9 0L135 271c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l87-87 87 87c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9z" />
+</svg>
+</div>
+</button>
+<div class="relative max-h-0 overflow-hidden transition-all duration-100" x-ref="container1" style="max-height: initial" x-bind:style="selectedIndex == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+<div class="whitespace-pre-line break-words px-4 py-6">To become a member of Wealthy Dates Club, simply create a profile and start connecting with other members today!</div>
+</div>
+</li>
+<li class="relative mt-3">
+<button type="button" class="w-full px-4 py-5 text-left bg-alt text-alt-text" :class="{ 'bg-primary text-primary-text': selectedIndex === 2, 'bg-alt text-alt-text': selectedIndex !== 2 }" x-on:click="selectedIndex !== 2 ? selectedIndex = 2 : selectedIndex = null; setTimeout(() => ScrollTrigger.refresh(true))">
+<div class="flex items-center justify-between gap-4 pr-4 text-lg font-semibold">
+<span class="overflow-hidden whitespace-pre-line break-words">Can I get customer support if I have any issues or questions?</span>
+<svg class="h-6 w-6 flex-shrink-0 fill-current transition duration-100 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path class="hidden" :class="{ 'block': selectedIndex === 2, 'hidden': selectedIndex !== 2 }" d="M256 464a208 208 0 1 1 0-416 208 208 0 1 1 0 416zM256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241L239 345c9.4 9.4 24.6 9.4 33.9 0L377 241c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-87 87-87-87c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+<path class :class="{ 'block': selectedIndex !== 2, 'hidden': selectedIndex === 2 }" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM377 271L273 167c-9.4-9.4-24.6-9.4-33.9 0L135 271c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l87-87 87 87c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9z" />
+</svg>
+</div>
+</button>
+<div class="relative max-h-0 overflow-hidden transition-all duration-100" x-ref="container2" style x-bind:style="selectedIndex == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+<div class="whitespace-pre-line break-words px-4 py-6">Absolutely! Our dedicated customer support team is here to assist you with any questions or concerns you may have.</div>
+</div>
+</li>
+<li class="relative mt-3">
+<button type="button" class="w-full px-4 py-5 text-left bg-alt text-alt-text" :class="{ 'bg-primary text-primary-text': selectedIndex === 3, 'bg-alt text-alt-text': selectedIndex !== 3 }" x-on:click="selectedIndex !== 3 ? selectedIndex = 3 : selectedIndex = null; setTimeout(() => ScrollTrigger.refresh(true))">
+<div class="flex items-center justify-between gap-4 pr-4 text-lg font-semibold">
+<span class="overflow-hidden whitespace-pre-line break-words">Is Wealthy Dates Club only for wealthy individuals?</span>
+<svg class="h-6 w-6 flex-shrink-0 fill-current transition duration-100 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path class="hidden" :class="{ 'block': selectedIndex === 3, 'hidden': selectedIndex !== 3 }" d="M256 464a208 208 0 1 1 0-416 208 208 0 1 1 0 416zM256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241L239 345c9.4 9.4 24.6 9.4 33.9 0L377 241c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-87 87-87-87c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+<path class :class="{ 'block': selectedIndex !== 3, 'hidden': selectedIndex === 3 }" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM377 271L273 167c-9.4-9.4-24.6-9.4-33.9 0L135 271c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l87-87 87 87c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9z" />
+</svg>
+</div>
+</button>
+<div class="relative max-h-0 overflow-hidden transition-all duration-100" x-ref="container3" style x-bind:style="selectedIndex == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+<div class="whitespace-pre-line break-words px-4 py-6">No, Wealthy Dates Club is open to everyone who is seeking friendship or love. We welcome people from all walks of life.</div>
+</div>
+</li>
+<li class="relative mt-3">
+<button type="button" class="w-full px-4 py-5 text-left bg-alt text-alt-text" :class="{ 'bg-primary text-primary-text': selectedIndex === 4, 'bg-alt text-alt-text': selectedIndex !== 4 }" x-on:click="selectedIndex !== 4 ? selectedIndex = 4 : selectedIndex = null; setTimeout(() => ScrollTrigger.refresh(true))">
+<div class="flex items-center justify-between gap-4 pr-4 text-lg font-semibold">
+<span class="overflow-hidden whitespace-pre-line break-words">Can I customize my profile on Wealthy Dates Club?</span>
+<svg class="h-6 w-6 flex-shrink-0 fill-current transition duration-100 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path class="hidden" :class="{ 'block': selectedIndex === 4, 'hidden': selectedIndex !== 4 }" d="M256 464a208 208 0 1 1 0-416 208 208 0 1 1 0 416zM256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241L239 345c9.4 9.4 24.6 9.4 33.9 0L377 241c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-87 87-87-87c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+<path class :class="{ 'block': selectedIndex !== 4, 'hidden': selectedIndex === 4 }" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM377 271L273 167c-9.4-9.4-24.6-9.4-33.9 0L135 271c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l87-87 87 87c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9z" />
+</svg>
+</div>
+</button>
+<div class="relative max-h-0 overflow-hidden transition-all duration-100" x-ref="container4" style x-bind:style="selectedIndex == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''">
+<div class="whitespace-pre-line break-words px-4 py-6">Yes, you can easily create a personalized profile that showcases your interests and personality.</div>
+</div>
+</li>
+<li class="relative mt-3">
+<button type="button" class="w-full px-4 py-5 text-left bg-alt text-alt-text" :class="{ 'bg-primary text-primary-text': selectedIndex === 5, 'bg-alt text-alt-text': selectedIndex !== 5 }" x-on:click="selectedIndex !== 5 ? selectedIndex = 5 : selectedIndex = null; setTimeout(() => ScrollTrigger.refresh(true))">
+<div class="flex items-center justify-between gap-4 pr-4 text-lg font-semibold">
+<span class="overflow-hidden whitespace-pre-line break-words">Are there any additional features available for paid members?</span>
+<svg class="h-6 w-6 flex-shrink-0 fill-current transition duration-100 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path class="hidden" :class="{ 'block': selectedIndex === 5, 'hidden': selectedIndex !== 5 }" d="M256 464a208 208 0 1 1 0-416 208 208 0 1 1 0 416zM256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241L239 345c9.4 9.4 24.6 9.4 33.9 0L377 241c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-87 87-87-87c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+<path class :class="{ 'block': selectedIndex !== 5, 'hidden': selectedIndex === 5 }" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM377 271L273 167c-9.4-9.4-24.6-9.4-33.9 0L135 271c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l87-87 87 87c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9z" />
+</svg>
+</div>
+</button>
+<div class="relative max-h-0 overflow-hidden transition-all duration-100" x-ref="container5" style x-bind:style="selectedIndex == 5 ? 'max-height: ' + $refs.container5.scrollHeight + 'px' : ''">
+<div class="whitespace-pre-line break-words px-4 py-6">As a paid member, you gain access to advanced search options and additional communication features.</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="form" class="layer overflow-visible bg-alt md:mt-12">
+<div class="layer-content flex flex-col gap-10 py-12 md:flex-row md:py-24">
+<div class="flex min-w-0 flex-col gap-8 md:basis-1/3 md:pt-16">
+<div>
+<div class="from-left heading-typical whitespace-pre-line break-words font-semibold text-alt-text" x-data x-anim-fade>Contact Us</div>
+<div class="mt-4 whitespace-pre-line break-words text-alt-text">Get in touch with our friendly team.</div>
+</div>
+</div>
+<div class="from-bottom -mx-3 flex min-w-0 flex-col border border-alt bg-background p-6 text-foreground shadow-around md:mx-0 md:-mt-40 md:basis-2/3 md:self-start md:p-12" x-data x-anim-fade>
+<div class="flex flex-grow flex-col">
+<form class="flex flex-col gap-3" method="POST" action="#form" data-captcha-id="6LfJWtMmAAAAAPw6KDD14POHm4ifrxqXBlR_-gDP">
+<div class="heading-typical pr-8 font-semibold">Connect With Us Today</div>
+<div class="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
+<div class="flex flex-col">
+<label class="text-lg font-semibold" for="name">Name</label>
+<input type="text" id="name" name="name" autocomplete="name" placeholder="Name" class="input heading">
+</div>
+<div class="flex flex-col">
+<label class="text-lg font-semibold" for="phone">Phone</label>
+<input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Phone" class="input heading">
+</div>
+<div class="flex flex-col">
+<label class="text-lg font-semibold" for="email">Email</label>
+<input type="email" id="email" name="email" autocomplete="email" placeholder="Email" class="input heading" required>
+</div>
+<div class="flex flex-col">
+<label class="text-lg font-semibold" for="service">Subject</label>
+<select id="service" name="service" class="input heading" required>
+<option value disabled selected>Subject</option>
+<option value="Online Friendship">Online Friendship</option><option value="Membership sign-up">Membership sign-up</option><option value="Paid Dating">Paid Dating</option><option value="Customer support team">Customer support team</option><option value="Profile creation">Profile creation</option>
+<option value="All">All of the Above</option>
+<option value="Other">Other</option>
+</select>
+</div>
+<div class="flex flex-col lg:col-span-2">
+<label class="text-lg font-semibold" for="message">Message</label>
+<textarea id="message" name="additional" placeholder="Message" class="input heading" rows="4"></textarea>
+</div>
+</div>
+<label class="hidden">Don't fill this out if you're human: <input id="comment" name="comment"></label>
+<input id="challenge" type="hidden" name="challenge">
+<button class="button mt-3 justify-center bg-button text-center text-button-text shadow-md" type="submit">
+Submit
+</button>
+<div class="text-sm">
+This site is protected by reCAPTCHA and the Google
+<a class="underline" href="https://policies.google.com/privacy">Privacy Policy</a> and
+<a class="underline" href="https://policies.google.com/terms">Terms of Service</a>
+apply.
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<footer class="layer mt-auto bg-black py-4 text-white">
+<div class="layer-content flex w-full flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+<div>
+<div class="text-xl uppercase lg:text-2xl">Wealthy Dates Club</div>
+<div class="flex flex-col lg:flex-row lg:gap-6">
+<a class="flex items-center gap-2 py-1" href="tel:+19999999999">(999) 999-9999</a>
+<a class="flex items-center gap-2 py-1" href="mailto:wealthydatesclub@xmail.com">wealthydatesclub@xmail.com</a>
+</div>
+</div>
+<div class="flex flex-wrap justify-start gap-3 py-2 lg:max-w-md lg:justify-end">
+<a class="flex h-12 w-12 items-center justify-center gap-2 rounded-full border-2 border-current" href="tel:+19999999999" aria-label="Call">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-6 w-6 fill-current">
+<path d="M347.1 24.6c7.7-18.6 28-28.5 47.4-23.2l88 24C499.9 30.2 512 46 512 64c0 247.4-200.6 448-448 448c-18 0-33.8-12.1-38.6-29.5l-24-88c-5.3-19.4 4.6-39.7 23.2-47.4l96-40c16.3-6.8 35.2-2.1 46.3 11.6L207.3 368c70.4-33.3 127.4-90.3 160.7-160.7L318.7 167c-13.7-11.2-18.4-30-11.6-46.3l40-96z" />
+</svg>
+</a>
+<a class="flex h-12 w-12 items-center justify-center gap-2 rounded-full border-2 border-current" href="sms:+19999999999" aria-label="Text">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-6 w-6 fill-current">
+<path d="M160 368c26.5 0 48 21.5 48 48v16l72.5-54.4c8.3-6.2 18.4-9.6 28.8-9.6H448c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H64c-8.8 0-16 7.2-16 16V352c0 8.8 7.2 16 16 16h96zm48 124l-.2 .2-5.1 3.8-17.1 12.8c-4.8 3.6-11.3 4.2-16.8 1.5s-8.8-8.2-8.8-14.3V474.7v-6.4V468v-4V416H112 64c-35.3 0-64-28.7-64-64V64C0 28.7 28.7 0 64 0H448c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H309.3L208 492z" />
+</svg>
+</a>
+<a class="flex h-12 w-12 items-center justify-center gap-2 rounded-full border-2 border-current" href="mailto:wealthydatesclub@xmail.com" aria-label="Email">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-6 w-6 fill-current">
+<path d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z" />
+</svg>
+</a>
+</div>
+</div>
+</footer>
+<div id="turncage-banner" class="layer bg-[#374154] text-white">
+<div class="layer-content flex items-center justify-between">
+<a class="flex items-center font-sans text-xs text-[#CDD5E0] md:text-sm" href="https://turncage.com">
+<span class="mt-1">Created By : psyschology</span>
+<script defer src="script.js"></script>
+<script defer src="script1.js"></script>
+</body>
+</html>
