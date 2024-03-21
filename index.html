@@ -162,6 +162,9 @@
   }
 </style>
 <meta property="og:title" content="Home">
+<meta property="og:image" content>
+<meta property="og:image:width" content="200">
+<meta property="og:image:height" content="113">
 </head>
 <body class="flex min-h-full flex-col bg-background text-foreground">
 <nav class="navbar nav-height fixed left-0 top-0 z-30 flex w-full flex-col bg-background px-8 shadow-md lg:flex-row lg:px-4" role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" x-data>
@@ -250,6 +253,12 @@
 </div>
 <div class="nav-pad-offset">
 <div class="layer fill-svh relative flex min-h-[30rem] flex-col bg-highlight">
+<picture>
+<source media="(max-width: 1023px)" srcset="https://image-assets.turncage.com/cdn-cgi/image/format=auto,fit=cover,gravity=auto,height=571,width=320/clu0zxyc703aovcwh5n9kltbb/clu12mmms037kyrlw56055s4f.jpg 320w, https://image-assets.turncage.com/cdn-cgi/image/format=auto,fit=cover,gravity=auto,height=857,width=480/clu0zxyc703aovcwh5n9kltbb/clu12mmms037kyrlw56055s4f.jpg 480w">
+<img class="absolute inset-0 z-0 h-full w-full object-cover lg:hidden" src="https://image-assets.turncage.com/clu0zxyc703aovcwh5n9kltbb/clu12mmms037kyrlw56055s4f.jpg" sizes="100vw" alt>
+</picture>
+<div class="absolute inset-0 z-0 h-full w-full" x-data x-background-video="https://www.youtube.com/embed/tA8Fn53iHds?rel=0&autoplay=1&mute=1&loop=1&playlist=tA8Fn53iHds&controls=0&disablekb=1" data-width="200" data-height="113"></div>
+<div class="absolute inset-0 z-0 w-full bg-overlay"></div>
 <div class="layer-content flex flex-grow flex-col items-center justify-center">
 <div class="relative my-8 flex min-h-[14rem] flex-col justify-end sm:ml-[15%]">
 <svg class="absolute inset-0 z-0 aspect-[1.2] w-64 stroke-primary md:w-80 lg:w-96">
@@ -260,7 +269,7 @@
 <rect class="transition-all ease-in-out duration-[2s] stroke-20 md:stroke-40" width="100%" height="100%" fill="none" stroke-width="40" stroke-dashoffset="1550" stroke-dasharray="1550" mask="url(#mask)" x-data x-anim-class.dashoffset-zero></rect>
 </svg>
 <div class="from-bottom z-0 ml-10 mt-14 flex flex-col items-start justify-center gap-4 p-6 md:ml-20 md:p-8" x-data x-anim-fade>
-<h1 class="max-w-full whitespace-pre-line break-words text-2xl/tight font-semibold sm:text-4xl/tight md:text-6xl/tight lg:text-7xl/tight text-highlight-text">Welcome to Wealthy Dates Club, the ultimate dating service for singles worldwide</h1>
+<h1 class="max-w-full whitespace-pre-line break-words text-2xl/tight font-semibold sm:text-4xl/tight md:text-6xl/tight lg:text-7xl/tight text-overlay-text">Welcome to Wealthy Dates Club, the ultimate dating service for singles worldwide</h1>
 <a class="from-left stagger-1 button ml-8 mt-auto bg-highlight-button px-12 py-3 text-lg text-highlight-button-text shadow-md md:ml-24" x-data x-anim-fade href="/contact">Connect Now</a>
 </div>
 </div>
@@ -312,53 +321,58 @@
 <div x-ref="viewport">
 <div class="flex">
 <a href="/online-friendship" class="relative stagger-0 mx-1 flex flex-col bg-highlight2 ml-8 group">
-<div class="relative flex w-72 max-w-[80vw] flex-grow flex-col items-center gap-2 px-8 py-16 text-center text-highlight2-text border-2 border-transparent transition-colors group-hover:border-white group-hover:bg-black/40">
+<img class="absolute inset-0 z-0 h-full w-full object-cover" srcset="https://image-assets.turncage.com/cdn-cgi/image/format=auto,fit=cover,gravity=auto,height=427,width=320/clu0zxyc703aovcwh5n9kltbb/clu11hp7d03g84ok650fzqcfx.jpg 320w, https://image-assets.turncage.com/cdn-cgi/image/format=auto,fit=cover,gravity=auto,height=640,width=480/clu0zxyc703aovcwh5n9kltbb/clu11hp7d03g84ok650fzqcfx.jpg 480w" src="https://image-assets.turncage.com/clu0zxyc703aovcwh5n9kltbb/clu11hp7d03g84ok650fzqcfx.jpg" sizes="(min-width: 768px) 33vw, 100vw" alt loading="lazy">
+<div class="relative flex w-72 max-w-[80vw] flex-grow flex-col items-center gap-2 px-8 py-16 text-center bg-overlay text-overlay-text border-2 border-transparent transition-colors group-hover:border-white group-hover:bg-black/40">
 <div class="flex max-w-full basis-16 flex-col justify-center md:basis-20">
 <div class="whitespace-pre-line break-words text-2xl lg:text-3xl">Socialize</div>
 </div>
 <div class="max-w-full whitespace-pre-line break-words">Discover new friendships and expand your social circle with our online friendship service.</div>
 <div class="mt-12 flex flex-grow flex-col justify-end">
-<div class="button max-w-full self-center whitespace-pre-line break-words border-2 border-highlight2-button text-highlight2-button py-1.5 transition-colors group-hover:border-white group-hover:bg-white group-hover:text-black">More</div>
+<div class="button max-w-full self-center whitespace-pre-line break-words border-2 border-current text-current shadow-md py-1.5 transition-colors group-hover:border-white group-hover:bg-white group-hover:text-black">More</div>
 </div>
 </div>
 </a><a href="/membership-sign-up" class="relative stagger-1 mx-1 flex flex-col bg-highlight2  group">
-<div class="relative flex w-72 max-w-[80vw] flex-grow flex-col items-center gap-2 px-8 py-16 text-center text-highlight2-text border-2 border-transparent transition-colors group-hover:border-white group-hover:bg-black/40">
+<img class="absolute inset-0 z-0 h-full w-full object-cover" srcset="https://image-assets.turncage.com/cdn-cgi/image/format=auto,fit=cover,gravity=auto,height=427,width=320/clu0zxyc703aovcwh5n9kltbb/clu11jbbm03c8vcwh7l4oa5ud.jpg 320w, https://image-assets.turncage.com/cdn-cgi/image/format=auto,fit=cover,gravity=auto,height=640,width=480/clu0zxyc703aovcwh5n9kltbb/clu11jbbm03c8vcwh7l4oa5ud.jpg 480w" src="https://image-assets.turncage.com/clu0zxyc703aovcwh5n9kltbb/clu11jbbm03c8vcwh7l4oa5ud.jpg" sizes="(min-width: 768px) 33vw, 100vw" alt loading="lazy">
+<div class="relative flex w-72 max-w-[80vw] flex-grow flex-col items-center gap-2 px-8 py-16 text-center bg-overlay text-overlay-text border-2 border-transparent transition-colors group-hover:border-white group-hover:bg-black/40">
 <div class="flex max-w-full basis-16 flex-col justify-center md:basis-20">
 <div class="whitespace-pre-line break-words text-2xl lg:text-3xl">Join</div>
 </div>
 <div class="max-w-full whitespace-pre-line break-words">Sign up for membership and gain access to a world of potential matches.</div>
 <div class="mt-12 flex flex-grow flex-col justify-end">
-<div class="button max-w-full self-center whitespace-pre-line break-words border-2 border-highlight2-button text-highlight2-button py-1.5 transition-colors group-hover:border-white group-hover:bg-white group-hover:text-black">More</div>
+<div class="button max-w-full self-center whitespace-pre-line break-words border-2 border-current text-current shadow-md py-1.5 transition-colors group-hover:border-white group-hover:bg-white group-hover:text-black">More</div>
 </div>
 </div>
 </a><a href="/paid-dating" class="relative stagger-2 mx-1 flex flex-col bg-highlight2  group">
-<div class="relative flex w-72 max-w-[80vw] flex-grow flex-col items-center gap-2 px-8 py-16 text-center text-highlight2-text border-2 border-transparent transition-colors group-hover:border-white group-hover:bg-black/40">
+<img class="absolute inset-0 z-0 h-full w-full object-cover" srcset="https://image-assets.turncage.com/cdn-cgi/image/format=auto,fit=cover,gravity=auto,height=427,width=320/clu0zxyc703aovcwh5n9kltbb/clu11l93f036myrlwrup2wdmm.jpg 320w, https://image-assets.turncage.com/cdn-cgi/image/format=auto,fit=cover,gravity=auto,height=640,width=480/clu0zxyc703aovcwh5n9kltbb/clu11l93f036myrlwrup2wdmm.jpg 480w" src="https://image-assets.turncage.com/clu0zxyc703aovcwh5n9kltbb/clu11l93f036myrlwrup2wdmm.jpg" sizes="(min-width: 768px) 33vw, 100vw" alt loading="lazy">
+<div class="relative flex w-72 max-w-[80vw] flex-grow flex-col items-center gap-2 px-8 py-16 text-center bg-overlay text-overlay-text border-2 border-transparent transition-colors group-hover:border-white group-hover:bg-black/40">
 <div class="flex max-w-full basis-16 flex-col justify-center md:basis-20">
 <div class="whitespace-pre-line break-words text-2xl lg:text-3xl">Indulge</div>
 </div>
-<div class="max-w-full whitespace-pre-line break-words">Treat yourself to unforgettable dates with attractive singles around the world.</div>
+<div class="max-w-full whitespace-pre-line break-words"><p><span class="slot-1">Treat yourself to unforgettable dates with attractive singles around the world.</span></p></div>
 <div class="mt-12 flex flex-grow flex-col justify-end">
-<div class="button max-w-full self-center whitespace-pre-line break-words border-2 border-highlight2-button text-highlight2-button py-1.5 transition-colors group-hover:border-white group-hover:bg-white group-hover:text-black">More</div>
+<div class="button max-w-full self-center whitespace-pre-line break-words border-2 border-current text-current shadow-md py-1.5 transition-colors group-hover:border-white group-hover:bg-white group-hover:text-black">More</div>
 </div>
 </div>
 </a><a href="/customer-support-team" class="relative stagger-3 mx-1 flex flex-col bg-highlight2  group">
-<div class="relative flex w-72 max-w-[80vw] flex-grow flex-col items-center gap-2 px-8 py-16 text-center text-highlight2-text border-2 border-transparent transition-colors group-hover:border-white group-hover:bg-black/40">
+<img class="absolute inset-0 z-0 h-full w-full object-cover" srcset="https://image-assets.turncage.com/cdn-cgi/image/format=auto,fit=cover,gravity=auto,height=427,width=320/clu0zxyc703aovcwh5n9kltbb/clu11nirp03gd4ok6l1fw9kit.jpg 320w, https://image-assets.turncage.com/cdn-cgi/image/format=auto,fit=cover,gravity=auto,height=640,width=480/clu0zxyc703aovcwh5n9kltbb/clu11nirp03gd4ok6l1fw9kit.jpg 480w" src="https://image-assets.turncage.com/clu0zxyc703aovcwh5n9kltbb/clu11nirp03gd4ok6l1fw9kit.jpg" sizes="(min-width: 768px) 33vw, 100vw" alt loading="lazy">
+<div class="relative flex w-72 max-w-[80vw] flex-grow flex-col items-center gap-2 px-8 py-16 text-center bg-overlay text-overlay-text border-2 border-transparent transition-colors group-hover:border-white group-hover:bg-black/40">
 <div class="flex max-w-full basis-16 flex-col justify-center md:basis-20">
 <div class="whitespace-pre-line break-words text-2xl lg:text-3xl">Assist</div>
 </div>
 <div class="max-w-full whitespace-pre-line break-words">Enjoy peace of mind knowing that our customer support team is available to help you every step of the way.</div>
 <div class="mt-12 flex flex-grow flex-col justify-end">
-<div class="button max-w-full self-center whitespace-pre-line break-words border-2 border-highlight2-button text-highlight2-button py-1.5 transition-colors group-hover:border-white group-hover:bg-white group-hover:text-black">More</div>
+<div class="button max-w-full self-center whitespace-pre-line break-words border-2 border-current text-current shadow-md py-1.5 transition-colors group-hover:border-white group-hover:bg-white group-hover:text-black">More</div>
 </div>
 </div>
 </a><a href="/profile-creation" class="relative stagger-4 mx-1 flex flex-col bg-highlight2 mr-8 group">
-<div class="relative flex w-72 max-w-[80vw] flex-grow flex-col items-center gap-2 px-8 py-16 text-center text-highlight2-text border-2 border-transparent transition-colors group-hover:border-white group-hover:bg-black/40">
+<img class="absolute inset-0 z-0 h-full w-full object-cover" srcset="https://image-assets.turncage.com/cdn-cgi/image/format=auto,fit=cover,gravity=auto,height=427,width=320/clu0zxyc703aovcwh5n9kltbb/clu11peex03cfvcwh3mruipyw.jpg 320w, https://image-assets.turncage.com/cdn-cgi/image/format=auto,fit=cover,gravity=auto,height=640,width=480/clu0zxyc703aovcwh5n9kltbb/clu11peex03cfvcwh3mruipyw.jpg 480w" src="https://image-assets.turncage.com/clu0zxyc703aovcwh5n9kltbb/clu11peex03cfvcwh3mruipyw.jpg" sizes="(min-width: 768px) 33vw, 100vw" alt loading="lazy">
+<div class="relative flex w-72 max-w-[80vw] flex-grow flex-col items-center gap-2 px-8 py-16 text-center bg-overlay text-overlay-text border-2 border-transparent transition-colors group-hover:border-white group-hover:bg-black/40">
 <div class="flex max-w-full basis-16 flex-col justify-center md:basis-20">
 <div class="whitespace-pre-line break-words text-2xl lg:text-3xl">Stand Out</div>
 </div>
 <div class="max-w-full whitespace-pre-line break-words">Stand out from the crowd and attract potential matches with a well-crafted profile.</div>
 <div class="mt-12 flex flex-grow flex-col justify-end">
-<div class="button max-w-full self-center whitespace-pre-line break-words border-2 border-highlight2-button text-highlight2-button py-1.5 transition-colors group-hover:border-white group-hover:bg-white group-hover:text-black">More</div>
+<div class="button max-w-full self-center whitespace-pre-line break-words border-2 border-current text-current shadow-md py-1.5 transition-colors group-hover:border-white group-hover:bg-white group-hover:text-black">More</div>
 </div>
 </div>
 </a>
@@ -431,7 +445,13 @@ View All
 </div>
 </div>
 <div class="layer relative bg-alt pb-32">
-<div class="layer-content flex flex-col py-12 md:py-24 text-alt-text">
+<picture>
+<source media="(max-width: 1023px)" srcset="https://image-assets.turncage.com/cdn-cgi/image/format=auto,fit=cover,gravity=auto,height=320,width=320/clu0zxyc703aovcwh5n9kltbb/clu11rmpk03ckvcwhktl5emc4.jpg 320w, https://image-assets.turncage.com/cdn-cgi/image/format=auto,fit=cover,gravity=auto,height=480,width=480/clu0zxyc703aovcwh5n9kltbb/clu11rmpk03ckvcwhktl5emc4.jpg 480w">
+<source media="(min-width: 1024px)" srcset="https://image-assets.turncage.com/cdn-cgi/image/format=auto,fit=cover,gravity=auto,height=160,width=320/clu0zxyc703aovcwh5n9kltbb/clu11rmpk03ckvcwhktl5emc4.jpg 320w, https://image-assets.turncage.com/cdn-cgi/image/format=auto,fit=cover,gravity=auto,height=240,width=480/clu0zxyc703aovcwh5n9kltbb/clu11rmpk03ckvcwhktl5emc4.jpg 480w">
+<img class="absolute inset-0 z-0 h-full w-full object-cover" src="https://image-assets.turncage.com/clu0zxyc703aovcwh5n9kltbb/clu11rmpk03ckvcwhktl5emc4.jpg" sizes="100vw" alt loading="lazy">
+</picture>
+<div class="absolute inset-0 z-0 w-full bg-overlay"></div>
+<div class="layer-content flex flex-col py-12 md:py-24 text-overlay-text">
 <div class="from-bottom subheading-typical whitespace-pre-line break-words text-center font-semibold lg:text-lg" x-data x-anim-fade>Who We Serve</div>
 <div class="from-bottom heading-typical mt-4 whitespace-pre-line break-words text-center" x-data x-anim-fade>Discover how Wealthy Dates Club can meet your dating needs</div>
 </div>
@@ -552,8 +572,10 @@ View All
 </div>
 </div>
 </div>
-<div class="layer relative overflow-hidden bg-highlight">
-<div class="length-2 layer-content relative flex flex-col py-12 md:items-center md:py-24 text-highlight-text" x-data x-anim-fade>
+<div class="layer relative overflow-hidden bg-highlight" x-data data-herowide="url('https://image-assets.turncage.com/cdn-cgi/image/format=auto,fit=cover,gravity=auto,height=135,width=270/clu0zxyc703aovcwh5n9kltbb/clu11txab03gp4ok6tuoq9n9s.jpg')" data-herotall="url('https://image-assets.turncage.com/cdn-cgi/image/format=auto,fit=cover,gravity=auto,height=270,width=270/clu0zxyc703aovcwh5n9kltbb/clu11txab03gp4ok6tuoq9n9s.jpg')" x-intersect.margin.100.once="$refs.background.style.backgroundImage = $el.dataset[window.innerWidth >= 1024 ? 'herowide' : 'herotall']" x-on:resize.window.debounce.100="$refs.background.style.backgroundImage = $el.dataset[window.innerWidth >= 1024 ? 'herowide' : 'herotall']">
+<div x-ref="background" class="absolute inset-0 z-0 h-full w-full bg-cover bg-center bg-no-repeat supports-[-webkit-touch-callout:none]:!bg-scroll md:bg-fixed"></div>
+<div class="absolute inset-0 z-0 w-full bg-overlay"></div>
+<div class="length-2 layer-content relative flex flex-col py-12 md:items-center md:py-24 text-overlay-text" x-data x-anim-fade>
 <div class="heading-typical max-w-3xl whitespace-pre-line break-words text-center font-semibold">Tired of swiping left? Frustrated with finding meaningful connections?</div>
 <div class="mt-6 max-w-3xl whitespace-pre-line break-words text-center lg:text-lg">We understand the frustrations of online dating. Let us help you find true love.</div>
 </div>
@@ -724,7 +746,29 @@ apply.
 <div id="turncage-banner" class="layer bg-[#374154] text-white">
 <div class="layer-content flex items-center justify-between">
 <a class="flex items-center font-sans text-xs text-[#CDD5E0] md:text-sm" href="https://turncage.com">
-<span class="mt-1">Created By : psyschology</span>
+<span class="mt-1">Created With:</span>
+<img width="391" height="75" class="h-auto w-32 md:w-48" src="https://app.turncage.com/cdn-cgi/image/format=auto/img/turncage-logo-small.png" loading="lazy" alt="TurnCage">
+</a>
+<a class="px-4 py-3" href="https://app.turncage.com">Sign In</a>
+</div>
+</div>
+<div id="upsell-banner" class="sticky inset-x-0 bottom-0 z-50 flex flex-col border-t-4 border-[#FF247D] bg-white px-8 py-4 text-black lg:px-32 lg:py-8" x-data="{'visible': true}" x-show="visible">
+<div class="flex flex-col gap-4 lg:flex-row lg:justify-between">
+<img src="https://app.turncage.com/cdn-cgi/image/format=auto/img/turncage-logo-color.png" sizes="14rem" width="1632" height="265" class="h-auto w-56 self-center lg:w-80" alt="TurnCage Logo" loading="lazy">
+<div class="flex flex-col gap-4 lg:flex-row">
+<button type="button" class="rounded-md bg-black px-10 py-3 text-center text-xl font-semibold uppercase text-white shadow-md" x-on:click="visible = false">
+Hide This Alert
+</button>
+<a href="https://app.turncage.com/dashboard/account/subscription" class="rounded-md bg-[#FF247D] px-10 py-3 text-center text-xl font-semibold uppercase text-white shadow-md">Upgrade Now</a
+        >
+</div>
+</div>
+<div class="mt-4 border-t border-black pt-2 text-sm lg:text-xl xl:text-2xl">
+<strong>Enjoy your website preview!</strong> We provided a limited preview so our free users can give TurnCage a
+try without entering payment information. If you like what you see,
+<a href="https://app.turncage.com/dashboard/account/subscription" class="text-[#FF247D]">Upgrade Now!</a>
+</div>
+</div>
 <script defer src="script.js"></script>
 <script defer src="script1.js"></script>
 </body>
