@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Define route handler for POST requests to '/submit-form'
-app.post('http://localhost:3000/submit-form', (req, res) => {
+app.post('/submit-form', (req, res) => {
     const { name, email, message } = req.body;
 
     const transporter = nodemailer.createTransport({
@@ -36,18 +36,12 @@ app.post('http://localhost:3000/submit-form', (req, res) => {
 });
 
 // Define route handler for GET requests to '/submit-form'
-app.get('http://localhost:3000/submit-form', (req, res) => {
+app.get('/submit-form', (req, res) => {
     // Handle GET request logic here
-    res.send('Thanks for your response!');
+    res.send('This is the form submission page');
 });
 
 // Start the server
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
-
-
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
