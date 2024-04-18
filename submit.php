@@ -3,7 +3,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 <?php
 // Database connection parameters
-$servername = "localhost"; // Change if your MySQL server is on a different host
+$servername = "localhost:3306"; // Change if your MySQL server is on a different host
 $username = "friendsh"; // Replace with your MySQL username
 $password = "91iYUnZq%y)9I-"; // Replace with your MySQL password
 $dbname = "formdata"; // Replace with the name of your database
