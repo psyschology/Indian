@@ -1,5 +1,4 @@
 
-
 <!doctype html>
 <html lang="en" class="h-full">
 <head>
@@ -7,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home</title>
 <meta name="robots" content="noindex">
-<link rel="canonical" href="https://indian-beryl.vercel.app/">
+<link rel="canonical" href="https://www.friendshipklub.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow%3Awght%40400&display=swap" rel="preload" as="style">
@@ -179,30 +178,10 @@
             " src="logo.png" sizes="(min-width: 1024px) 25vw, 50vw" loading="eager" alt>
 </a></li><li class="component self-stretch hidden lg:flex text-lg " role="menuitem" x-data x-on:focusin.window="$refs.panel._x_isShown && !$refs.panel.contains($event.target) && $refs.panel.close()">
 <button type="button" class="flex cursor-pointer items-center gap-1" x-on:click="$refs.panel.toggle">
-<div class="uppercase">Premium Services</div>
-<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" class="h-4 w-4 fill-current transition-transform duration-100">
-<path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
-</svg>
-</button>
-<ul class="panel absolute left-0 top-0 z-30 hidden w-max min-w-[10rem] flex-col rounded-sm bg-background text-foreground shadow-md" x-ref="panel" x-float.placement.bottom-start.shift="{shift:{padding: 16}}" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95">
-<li class="border-1 border-t border-neutral-200 capitalize first:border-t-4 first:border-primary  transition-colors hover:bg-primary hover:text-primary-text">
-<a class="block px-3 py-3" role="menuitem" href="/adult-male-jobs">Male Jobs</a>
-</li>
-<li class="border-1 border-t border-neutral-200 capitalize first:border-t-4 first:border-primary  transition-colors hover:bg-primary hover:text-primary-text">
-<a class="block px-3 py-3" role="menuitem" href="/high-class-datings">High Earnings</a>
-</li>
-<li class="border-1 border-t border-neutral-200 capitalize first:border-t-4 first:border-primary  transition-colors hover:bg-primary hover:text-primary-text">
-<a class="block px-3 py-3" role="menuitem" href="/high-earnings">VIP Membership</a>
-</li>
-<li class="border-1 border-t border-neutral-200 capitalize first:border-t-4 first:border-primary  transition-colors hover:bg-primary hover:text-primary-text">
-<a class="block px-3 py-3" role="menuitem" href="/vip-membership">Talent Promotion</a>
-</li>
-<li class="border-1 border-t border-neutral-200 capitalize first:border-t-4 first:border-primary  transition-colors hover:bg-primary hover:text-primary-text">
-<a class="block px-3 py-3" role="menuitem" href="/talent-promotion">Adult Dating</a>
-</li>
-</ul>
 </li><li class="hidden lg:block text-lg " role="menuitem">
 <a class="uppercase" itemprop="url" href="about.html">About</a>
+</li><li class="hidden lg:block text-lg " role="menuitem">
+<a class="uppercase" itemprop="url" href="about.html">Services</a>
 </li><li class="hidden lg:block text-lg " role="menuitem">
 <a class="uppercase" itemprop="url" href="contact.html">Contact</a>
 </li>
@@ -232,25 +211,9 @@
 <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
 </svg>
 </div>
-<ul class="flex flex-col overflow-hidden pl-4 transition-all duration-100" x-ref="menu1" style="max-height: initial" x-bind:style="(!expand || $refs.menu1.scrollHeight) ? expand ? 'max-height: ' + $refs.menu1.scrollHeight + 'px' : 'max-height: 0' : 'max-height: initial'">
-<li class="text-xl capitalize " role="menuitem">
-<a class="my-3 block" href="/adult-male-jobs">Male Jobs</a>
-</li>
-<li class="text-xl capitalize " role="menuitem">
-<a class="my-3 block" href="/high-class-datings">High Earnings</a>
-</li>
-<li class="text-xl capitalize " role="menuitem">
-<a class="my-3 block" href="/high-earnings">VIP Membership</a>
-</li>
-<li class="text-xl capitalize " role="menuitem">
-<a class="my-3 block" href="/vip-membership">Talent Promotion</a>
-</li>
-<li class="text-xl capitalize " role="menuitem">
-<a class="my-3 block" href="/talent-promotion">Adult Dating</a>
-</li>
-</ul>
-</li><li class="text-2xl  lg:hidden" x-on:click="$store.menu.isOpen = false">
 <a class="my-3 block" href="about.html">About</a>
+</li><li class="text-2xl  lg:hidden" x-on:click="$store.menu.isOpen = false">   
+<a class="my-3 block" href="about.html">Services</a>
 </li><li class="text-2xl  lg:hidden" x-on:click="$store.menu.isOpen = false">
 <a class="my-3 block" href="contact.html">Contact</a>
 </li>
